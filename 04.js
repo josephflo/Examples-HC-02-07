@@ -5,8 +5,10 @@
   No comentar la funcion 
 */
 function sumArray(array, n) {
-  // La función llamada 'sumArray' recibe como argumento un arreglo de números ordenados llamado 'array' y un número
-  // entero llamdo 'n' y debe devolver true si alguna combinación de dos números cualesquiera del arreglo sumados
+  // La función llamada 'sumArray' recibe como argumento un arreglo de números ordenados llamado 
+  //'array' y un número
+  // entero llamdo 'n' y debe devolver true si alguna combinación de dos números cualesquiera 
+  //del arreglo sumados
   // dan n, y devuelva false si ninguna combinación de dos números sumados da como resultado el número n.
 
   // Ej:
@@ -19,6 +21,19 @@ function sumArray(array, n) {
   // por lo tanto también debería devolver false en este caso
 
   // Tu código aca:
+  var cantidad = array.length;
+
+  for (var i = 0; i < cantidad; i++) {
+    var a = array[i];
+
+    for (var j = 0; j < cantidad; j++) {
+      if (i === j) continue;
+      var b = array[j];
+      if (a + b === n) return true;
+    }
+  }
+
+  return false;
 
 };
 

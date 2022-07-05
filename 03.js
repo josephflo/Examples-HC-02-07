@@ -15,7 +15,22 @@ function sumaTodosPrimos(array) {
 
   // Tu código aca:
 
+  for (var i = 3, limit = Math.sqrt(n); i <= limit; i+=2) {
+    if (n % i === 0) {
+      return false;
+    }
+  } ;
+
+
+    var suma = 0;
+    for (var i = 0; i < arrayEnteros.length; i++) {//Recorro mi item de primos
+        suma = suma + arrayEnteros[i]; //hago mi sumatoria
+    }
+    console.log(primos);
+    return suma;//regreso todas las sumas
+      
 }
+
 
 // No modifiques nada debajo de esta linea //
 
