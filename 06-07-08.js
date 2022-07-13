@@ -7,11 +7,15 @@
 function crearClaseViajero() {
   class Viajero {
     constructor(nombre, edad, paises, compañeros) {
-      // El constructor de la clase Viajero recibe nombre (string), edad (integer), paises (array de strings), compañeros (array de objetos)
+      // El constructor de la clase Viajero recibe nombre (string), edad (integer), paises (array de strings), 
+      //compañeros (array de objetos)
       // Inicializar las propiedades del viajero con los valores recibidos como argumento
-
       // Tu código aca:
-
+      this.nombre = nombre
+      this.edad = edad
+      this.paises = paises
+      this.compañeros = compañeros
+      
     }
 
     addCompañero(nombre, nacionalidad, edad) {
