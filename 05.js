@@ -17,22 +17,14 @@ function agregaPropiedad(amigos, propiedad) {
   // agregaPropiedad(amigos, 'edad') debe devolver [{ nombre: 'toni', edad: null } , { nombre: 'Emi', edad: 25 }]
   //  objeto[property] = null;
   //  return objeto;
-//    amigos.forEach(function (item) {
-//    if (!item.hasOwnProperty(propiedad)) {
-//        item[property] = null; 
-//    }
-//  })
-//  
-//  return amigos;
-//
-function agregaPropiedad(amigos, propiedad) {
-
-  Object.defineProperty(amigos, 'propiedad',{
-      value : "null",
-  });
-
+    amigos.forEach(function (item) {
+    if (!item.hasOwnProperty(propiedad)) {  
+           item[propiedad] = null; 
+    }
+  })
+  
   return amigos;
-}
+
 }
 
 // No modifiques nada debajo de esta linea //
