@@ -25,14 +25,16 @@ function crearClaseViajero() {
       // No debe retornar nada.
 
       // Tu código aca:
-      let compañero = {nombre,nacionalidad, edad}
-      this.compañeros.push(compañero);
-
+      let compañero = {
+        nombre,
+        nacionalidad,
+        edad
       }
+      this.compañeros.push(compañero);
 
     }
 
-    addPais(pais) ;{
+    addPais(pais) {
       // El método 'AddPais' recibe un string 'pais' y debe agregarlo al arreglo de paises del viajero.
       // No debe retornar nada.
 
@@ -82,8 +84,8 @@ function crearClaseViajero() {
       // Tu código aca:
       return this.compañeros.map(compañero => compañero.edad).reduce((a, b) => a + b) / this.compañeros.length;
     }
-
-  return Viajero;
+  }
+    return Viajero;
 }
 
 // No modifiques nada debajo de esta linea //
