@@ -51,7 +51,9 @@ function crearClaseViajero() {
       // viajero.getCompañeros() debería devolver ['John', 'Peter']
 
       // Tu código aca:
-      return this.compañeros;
+      var compañeroANombre = ((compañero) => compañero.nombre);
+      var acompañantes = this.compañeros.map(compañeroANombre);
+      return acompañantes;
     }
 
     getPaises() {
@@ -63,7 +65,7 @@ function crearClaseViajero() {
       return this.paises;
       
     }
-
+//53644617
     getPromedioEdad() {
       // El método 'getPromedioEdad' debe retornar el promedio de edad de los compañeros de un viajero.
       // Ej:
